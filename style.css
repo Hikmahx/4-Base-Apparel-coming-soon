@@ -1,23 +1,3 @@
-@font-face{
-  font-family: 'Josefin Sans';
-  src: url('fonts/JosefinSans-Light.ttf');
-  font-weight: 300;
-}
-
-@font-face{
-  font-family: 'Josefin Sans';
-  src: url('fonts/JosefinSans-Regular.ttf');
-  font-weight: 400;
-}
-
-@font-face{
-  font-family: 'Josefin Sans';
-  src: url('fonts/JosefinSans-SemiBold.ttf');
-  font-weight: 600;
-}
-
-
-
 color{
   color: #ce9797;
   color: #f96262;
@@ -47,7 +27,7 @@ html{
 .subscription{
   background: linear-gradient(135deg, #ffffff, #fff3f3);
   width: 100%;
-  height: 143vh;
+  /* height: 143vh; */
 }
 
 .header{
@@ -67,6 +47,7 @@ html{
 
 .img-wrapper img{
   width: 100%;
+  object-fit: cover;
 }
 
 .banner{
@@ -102,7 +83,7 @@ h1{
 
 .input-group{
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
 }
 
 .input-group input[type="email"]{
@@ -142,3 +123,16 @@ h1{
   box-shadow: 0 1.5rem 1.5rem rgb(190, 47, 52, 16%);
 }
 
+/* MEDIA QUERIES FOR TABLET AND DESKTOP */
+@media(min-width: 599px){
+  .input-group input[type="email"]{
+    width: 35rem;
+  }
+
+  .submit-btn{
+    left: 28.6rem;
+  }
+}
+
+@media(min-width:750px){}
+@media(min-width:1023px){}
