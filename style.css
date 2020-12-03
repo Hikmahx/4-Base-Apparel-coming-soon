@@ -1,0 +1,144 @@
+@font-face{
+  font-family: 'Josefin Sans';
+  src: url('fonts/JosefinSans-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: 'Josefin Sans';
+  src: url('fonts/JosefinSans-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Josefin Sans';
+  src: url('fonts/JosefinSans-SemiBold.ttf');
+  font-weight: 600;
+}
+
+
+
+color{
+  color: #ce9797;
+  color: #f96262;
+
+  color: rgb(65, 58, 58);
+    /* background:   #fff9f9 no-repeat; */
+      /* background:linear-gradient(135deg, from #f8bfbf, to hsl(0, 74%, 74%)); */
+
+
+}
+
+/* MOBILE FIRST */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+  
+html{
+  font-size: 62.5%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.subscription{
+  background: linear-gradient(135deg, #ffffff, #fff3f3);
+  width: 100%;
+  height: 143vh;
+}
+
+.header{
+  width:100%;
+  height: fit-content;
+}
+
+.logo img{
+  width: 16rem;
+  padding: 3rem;
+}
+
+.img-wrapper{
+  width:100% ;
+  height: auto;
+}
+
+.img-wrapper img{
+  width: 100%;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 4.2rem;
+  margin:6rem 6rem 1.8rem;
+  color: #ce9797;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+.black{
+  display: block;
+  color: #000;
+  font-weight: 600;
+}
+
+.banner p{
+  color: #ce9797;
+  margin: 0 3rem 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.input-group{
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.input-group input[type="email"]{
+  background: transparent;
+  width: 30rem;
+  height: 4.8rem;
+  /* margin: auto; */
+  border: 0.1rem solid rgb(98, 60, 60, 0.2); ;
+  border-radius: 2.5rem; 
+  padding-left: 2rem; 
+  font-family: 'Josefin Sans';
+}
+
+.input-group input[type="email"]::placeholder{
+  color: rgb(206, 151, 151, 0.5);
+  font-family: 'Josefin Sans';
+  /* padding-left: 2rem; */
+}
+
+.input-group input[type="email"]:focus{
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(206, 151, 151, 0.25);;
+  
+  /*for error*/
+  /* border: 0.1rem solid red; */
+  
+}
+
+.submit-btn{
+  position: absolute;
+  width: 6.6rem;
+  height: 4.8rem;
+  left: 23.6rem;
+  background:url(images/icon-arrow.svg) center no-repeat, linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 2.5rem;
+  border: none;
+  box-shadow: 0 1.5rem 1.5rem rgb(190, 47, 52, 16%);
+}
+
