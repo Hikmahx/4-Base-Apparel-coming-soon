@@ -138,13 +138,12 @@ h1{
   }
 }
 
-@media(min-width:750px){}
-@media(min-width:1024px){
+@media(min-width:750px){
   .subscription{
     display: flex;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
   }
 
   .header{
@@ -164,14 +163,9 @@ h1{
   }
 
   .logo img{
-    margin-left: 12rem;
+    margin-left: 0rem;
     margin-top: 3rem;
-    width: 22rem;
-  }
-
-  .img-wrapper{
-    /* width: 50%; */
-    /* height: 100%; */
+    width: 20rem;
   }
 
   .img-wrapper .mobile-img{
@@ -187,6 +181,91 @@ h1{
     position: absolute;
     right: 0;
     width:42.5%;
+    height: -webkit-fill-available;
+  }
+
+  .banner{
+    background: url(images/bg-pattern-desktop.svg) center no-repeat, linear-gradient(135deg, #ffffff, #fff3f3);
+    background-position-y: inherit;
+    background-position-x: right;
+    background-size: cover;
+    padding-top:8.3rem;
+    /* text-align: left; */
+    width: auto;
+    display: grid;
+    grid-template-columns: 4rem repeat(4, 1fr);
+  }
+
+  .banner h1{
+    text-align: left;
+    width: 38rem;
+    grid-column: 2;
+    margin-left: 0;
+    font-size: 4rem;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    letter-spacing: 1.8rem;
+    line-height: 1.1;
+    /* margin-left: 2rem; */
+  }
+  .banner p{
+    text-align: left;
+    width: 38rem;
+    /* font-size: 1.6rem; */
+    /* margin-left: 0; */
+    grid-column: 2;
+    /* margin-top: -3rem; */
+    margin: 3rem 3rem 0 0;
+  }
+
+  form{
+    grid-column: 2;
+  }
+
+  .input-group{
+    margin-top: 3rem;
+  }
+
+  .input-group input[type="email"]{
+    /* width: 40rem; */
+    margin-bottom: 2rem;
+  }
+
+  .submit-btn{
+    /* left: 31.6rem; */
+  }
+
+  .submit-btn{
+    /* width: 9rem; */
+  }
+}
+@media(min-width:1023px){
+  .subscription{
+    height: 100vh;
+  }
+
+
+
+  .logo{
+    position: absolute;
+    left: 0;
+  }
+
+  .logo img{
+    margin-left: 12rem;
+    margin-top: 3rem;
+    width: 22rem;
+  }
+
+  .img-wrapper{
+    /* width: 50%; */
+    /* height: 100%; */
+  }
+
+
+
+  .img-wrapper{
+
     height: 100vh;
 
     /* height: 65.7rem; */
