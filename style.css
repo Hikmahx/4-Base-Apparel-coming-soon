@@ -186,7 +186,7 @@ h1{
   .img-wrapper{
     position: absolute;
     right: 0;
-    width:58rem;
+    width:42.5%;
     height: 100vh;
 
     /* height: 65.7rem; */
@@ -200,9 +200,10 @@ h1{
   }
   
   .banner{
-    background: url(images/bg-pattern-desktop.svg) center, linear-gradient(135deg, #ffffff, #fff3f3);
+    background: url(images/bg-pattern-desktop.svg) center no-repeat, linear-gradient(135deg, #ffffff, #fff3f3);
     background-position-y: inherit;
     background-position-x: right;
+    background-size: cover;
     padding-top:8.3rem;
     /* text-align: left; */
     width: auto;
@@ -250,8 +251,10 @@ h1{
   .submit-btn{
     left: 31.6rem;
   }
+
+  .submit-btn{
+    width: 9rem;
+  }
 }
 
-.submit-btn{
-  width: 9rem;
-}
+
