@@ -7,8 +7,11 @@ const emailInput = document.querySelector('#email-input');
 // Display Error
 form.addEventListener('submit', (e)=>{
 
+  atPositon = emailInput.value.indexOf('@')
+  dotPosition = emailInput.value.lastIndexOf('.');
   // Errors: empty, doesn't include @ or .
-  if (emailInput.value === "" || !emailInput.value.includes('@') || !emailInput.value.includes('.') || emailInput.value.length < 10) {
+  if (emailInput.value === "" || !emailInput.value.includes('@') || !emailInput.value.includes('.') || emailInput.value.length < 10 ||
+      atPositon <1 || dotPosition -atPositon <2) {
     const p = document.createElement('p');
     p.className = 'error-p';
     p.appendChild(document.createTextNode('Please provide a valid email'));
