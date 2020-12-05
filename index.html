@@ -28,15 +28,21 @@
             Add your email below to stay up-to-date with announcements and our launch deals.
           </p>
 
-          <form>
+          <form id="email-form">
             <div class="input-group">
-              <input type="email" name="Email" id="Email" placeholder="Email Address">
+              <!-- changing input type to text so the error won't overlap with the built-in one -->
+              <input type="text" name="Email" id="email-input" placeholder="Email Address">
+              <span class="error-icon"><img src="images/icon-error.svg" alt=""></span>
               <label for="Email"></label>
               <input class="submit-btn" type="submit" value="">
+              <div class="error">
+              </div>
             </div>
           </form>
         </div>
     </section>
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
