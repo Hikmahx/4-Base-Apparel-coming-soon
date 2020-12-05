@@ -254,4 +254,10 @@ h1{
   .submit-btn{
     width: 9rem;
   }
+
+  .submit-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 1rem 1.5rem rgba(189, 96, 93, 0.4);
+    background: url(images/icon-arrow.svg) center no-repeat, linear-gradient(135deg, #fbd7d7, #f7c9c9);
+  }
 }
