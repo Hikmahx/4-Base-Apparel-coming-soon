@@ -294,6 +294,14 @@ h1 {
   .logo {
     left: 9.5%;
   }
+
+  .input-group input[type="text"] {
+    width: 45rem;
+  }
+
+  .submit-btn{
+    left: 37rem;
+  }
 }
 
 @media (min-width: 1390px) {
@@ -307,10 +315,14 @@ h1 {
   }
 
   .input-group input[type="text"] {
-    width: 45rem;
+    // width: 45rem;
+    height: 5.5rem;
+    border-radius: 3rem;
   }
 
   .submit-btn{
-    left: 37rem;
+    // left: 37rem;
+    height: 5.5rem;
+    border-radius: 2.8rem;
   }
 }
