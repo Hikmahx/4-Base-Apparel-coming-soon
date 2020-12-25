@@ -141,7 +141,7 @@ h1 {
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 750px) {
   .subscription {
     display: grid;
     grid-template-columns: 1fr 42.5%;
@@ -185,7 +185,7 @@ h1 {
   .img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     position: absolute;
     right: 0;
     max-width: 100%;
