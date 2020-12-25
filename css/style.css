@@ -340,5 +340,11 @@ h1 {
     height: 5.5rem;
     border-radius: 2.8rem;
   }
+  .error {
+    top: 6rem;
+  }
+  .error-icon {
+    top: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
