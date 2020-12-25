@@ -314,13 +314,23 @@ h1 {
 
 @media (min-width: 1300px) {
   .logo {
-    left: 10%;
+    left: 9.5%;
   }
 }
 
 @media (min-width: 1390px) {
   .logo {
-    left: 11%;
+    left: 10.5%;
+  }
+  .input-group {
+    margin-top: 5rem;
+    margin-left: 0rem;
+  }
+  .input-group input[type="text"] {
+    width: 45rem;
+  }
+  .submit-btn {
+    left: 37rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
